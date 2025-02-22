@@ -1,0 +1,29 @@
+{
+  "name": "vehicle-theft-complaints-app",
+  "version": "1.0.0",
+  "description": "A web-based platform for reporting vehicle thefts, connecting citizens with law enforcement agencies.",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "nodemon backend/server.js",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run start\" \"npm run client\"",
+    "build": "npm run build --prefix frontend"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "concurrently": "^5.3.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-async-handler": "^1.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.10.9",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^6.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "author": "Your Name",
+  "license": "MIT"
+}
