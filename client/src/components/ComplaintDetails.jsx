@@ -26,7 +26,7 @@ const ComplaintDetails = () => {
         const fetchComplaintDetails = async () => {
             try {
                 const response = await api.get(`/complaints/${id}`);
-                setComplaint(response.data[0]);
+                setComplaint(response.data[response.data.length-1]);
             } catch (err) {
                 setError('Error fetching complaint details');
             } finally {
